@@ -7,7 +7,7 @@ class Customer(models.Model):
     sex=models.TextField(max_length=255)
     dateOfBirth=models.DateField()
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 class Account(models.Model):
     id=models.AutoField(primary_key=True)
