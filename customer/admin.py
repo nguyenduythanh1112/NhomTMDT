@@ -8,4 +8,4 @@ admin.site.register(models.FullName)
 admin.site.register(models.Address)
 
 admin.site.register(models.CustomerMember)
-admin.site.register(models.CustomerMember)
+admin.site.register(models.CustomerNew)

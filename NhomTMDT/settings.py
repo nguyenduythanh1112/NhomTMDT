@@ -33,7 +33,11 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     'book.apps.BookConfig',
-
+    'clothes.apps.ClothesConfig',
+    'customer.apps.CustomerConfig',
+    'item.apps.ItemConfig',
+    'laptop.apps.LaptopConfig',
+    'mobilephone.apps.MobilephoneConfig',
     
     'django.contrib.admin',
     'django.contrib.auth',

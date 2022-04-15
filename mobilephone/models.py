@@ -1,7 +1,7 @@
 from django.db import models
 from unicodedata import name
 from django.db import models
-from ..laptop.models import Producer
+from laptop.models import Producer
 class MobilePhoneBrand(models.Model):
     ID=models.IntegerField(primary_key=True)
     name=models.TextField()
