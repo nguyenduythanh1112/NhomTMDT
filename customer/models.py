@@ -39,14 +39,14 @@ class Address(models.Model):
         return self.number + "-" + self.street + "-" + self.city + "-" + self.country 
 
 class CustomerNew(Customer,models.Model):
-    id=models.AutoField(primary_key=True)
+    #id=models.AutoField(primary_key=True)
     registered=models.DateField()
     note=models.TextField(max_length=255)
     def __str__(self):
         return self.id
 
 class CustomerMember(Customer,models.Model):
-    id=models.AutoField(primary_key=True)
+    #id=models.AutoField(primary_key=True)
     card=models.TextField(max_length=255)
     MemberGrade=models.IntegerField()
     def __str__(self):

@@ -34,10 +34,11 @@ INSTALLED_APPS = [
 
     'book.apps.BookConfig',
     'clothes.apps.ClothesConfig',
-    'laptop.apps.LaptopConfig',
-    'mobilephone.apps.MobilephoneConfig',
     'customer.apps.CustomerConfig',
     'item.apps.ItemConfig',
+    'laptop.apps.LaptopConfig',
+    'mobilephone.apps.MobilephoneConfig',
+    'order.apps.OrderConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
