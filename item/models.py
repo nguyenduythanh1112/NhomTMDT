@@ -17,24 +17,24 @@ class LineItem(models.Model):
     quantity=models.IntegerField()
 
 class BookItem(Item,models.Model):
-    id=models.AutoField(primary_key=True)
+    # id=models.AutoField(primary_key=True)
     bookFile=models.TextField(max_length=1000)
     book=models.OneToOneField(Book,on_delete=models.CASCADE)
     def __str__(self):
         return str(self.id)
 class ClothesItem(Item,models.Model):
-    id=models.AutoField(primary_key=True)
+    # id=models.AutoField(primary_key=True)
     clothes=models.OneToOneField(Clothes,on_delete=models.CASCADE)
     def __str__(self):
         return self.barcode
 class LaptopItem(Item,models.Model):
-    id=models.AutoField(primary_key=True)
+    # id=models.AutoField(primary_key=True)
     guarantee=models.TextField()
     installment=models.TextField()
     def __str__(self):
         return str(self.id)
 class MobilePhoneItem(Item,models.Model):
-    id=models.AutoField(primary_key=True)
+    # id=models.AutoField(primary_key=True)
     guarantee=models.TextField()
     installment=models.TextField()
     def __str__(self):
